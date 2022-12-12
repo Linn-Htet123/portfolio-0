@@ -1,0 +1,186 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: 'Karla', sans-serif;
+    scroll-behavior: smooth;
+    background-color: azure;
+}
+.home{
+    margin: auto;
+    background-color: azure;
+}
+nav{
+    max-width: 1200px;
+    padding:16px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    padding:12px;
+}
+.logo-name .logo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: rgba(253, 220, 28, 0.99);
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+menu ul {
+    color: #2f2e2e;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-name div h4{
+    padding: 0;
+    margin:0;
+}
+menu ul li{
+    display: inline-block;
+    cursor:pointer;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+menu ul li a{
+    text-decoration:none;
+    color:black;
+    margin-right: 25px;
+}
+
+.contact-btn-container button{
+    background-color: rgba(253, 220, 28, 0.99);;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    padding: 8px 14px;
+    align-items: center;
+    justify-content: space-around;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+a{
+    text-decoration: none;
+}
+.contact-btn-container button svg{
+    width:18px;
+    height:18px;
+    padding: 0;
+    margin: 0;
+}
+.contact-btn-container button p{
+    padding: 0;
+    margin:0;
+}
+.curtain{
+    width: 100vw;
+    height: 100%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 3s;
+}
+.curtain-text-container{
+        position: relative;
+        bottom: 200px;
+}
+.curtain-text-container h1{
+    font-size: 80px;
+}
+.curtain-button-container {
+    position: absolute;
+    z-index: 5;
+    height: 60px;
+    width: 90px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.curtain-button-container:hover{
+    margin-top: 20px;
+    transform: scale(1.05);
+}
+.slide-hello{
+    background: black;
+    position: absolute;
+    right: 0px;
+    top: 90px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    transform: translateX(300px);
+    z-index: 5;
+    transition: .8s;
+    border-left: 8px solid rgba(253, 220, 28, 0.99);
+}
+
+.slide-hello svg{
+    width: 30px;
+    height: 30px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 6;
+    transform: translateX(-220px);
+    transition: .5s;
+}   
+.menu-contact-button button{
+    background-color: rgba(253, 220, 28, 0.99);;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    padding: 8px 14px;
+    align-items: center;
+    justify-content: space-around;
+    cursor:pointer;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.menu-contact-button button svg{
+    width:18px;
+    height:18px;
+    padding: 0;
+    margin: 0;
+}
+menu ul, .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menuToggle{
+    transform: translateX(10px);
+}
+
+menu ul li{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media  screen and (max-width:540px) {
+    .curtain-text-container h1{
+        font-size: 40px;
+    }
+}
+

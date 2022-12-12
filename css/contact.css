@@ -1,0 +1,116 @@
+.contact-container{
+    max-width:1100px;
+    margin:auto;
+    padding:10px;
+}
+.contact-header-container h1{
+    font-size: 60px;
+}
+.contact-form-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+form{
+    padding: 14px 20px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    color: white;
+}
+
+form input,textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 18px 8px;
+    width: 96%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(150, 145, 145);
+}
+form .contact-btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+textarea{
+    height: 150px;
+}
+.map{
+    border-radius: 20px;
+    text-align: left;
+    width:50%
+}
+
+
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.contact-info-svg-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 40px;
+    text-align: left;
+}
+.contact-info-svg-container svg{
+    border-radius: 50%;
+    width: 100px;
+    background-color: rgba(253, 220, 28, 0.99);
+    height: 100px;
+    padding: 12px;
+    margin-top: 20px;
+
+}
+.form-text-info p{
+    position: relative;
+}
+.form-text-info p::after{
+    content:'';
+    height: 4px;
+    position: absolute;
+    background-color: rgb(58, 58, 58);
+    width:16%;
+    bottom: -10px;
+    left:80px;
+}
+
+@media screen and (max-width:900px) {
+    .contact-form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contact-info-svg-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+    form{
+        width:300px
+    }
+    .map{
+        width: 100%;
+    }
+    .form-text-info p::after{
+        content:'';
+        height: 4px;
+        position: absolute;
+        background-color: rgb(58, 58, 58);
+        width:16%;
+        bottom: -10px;
+        left:110px;
+    }
+}

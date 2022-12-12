@@ -1,0 +1,175 @@
+.hero-section-container{
+  
+}
+.hero-section{
+    max-width:1100px;
+    margin:auto;
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.info-container{
+    width:80%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p,h1,h4{
+    padding:0;
+    margin:0;
+}
+.info-container .text-info-container .text-container h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.text-container p{
+    margin-bottom: 8px;
+    color:rgb(162, 164, 164)
+}
+.hire-me-btn-container button{
+    padding:6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: rgba(253, 220, 28, 0.99);
+    margin:12px 0px;
+}
+.hire-me-btn-container button svg{
+        width:25px;
+        margin-right: 5px;
+        height: 25px;
+}
+.content{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.content svg{
+    width:50px;
+    height: 50px;
+}
+.content p{
+    max-width: 300px;
+    color: rgba(134, 132, 132, 0.934);
+}
+
+.image-info-container{
+    max-width: 350px;
+    height:350px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.image-info-container img{
+    width:100%;
+    height: 100%;
+
+}
+.exp-success-container{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.exp-success{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+.exp-success-container div {
+    margin-bottom: 40px;
+}
+.exp-success-container div h4{
+    font-size: 26px;
+    font-weight: 600;
+    color:rgba(253, 220, 28, 0.99);
+}
+.social-media-container{
+    position: fixed;
+    left:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    bottom: 20px;
+}
+.social-media-container div i{
+    margin-bottom: 12px;
+    font-size: 20px;
+    padding: 0;
+}
+.social-media-container div i:hover{
+    color:black
+}
+.scroll-down{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-down a svg{
+    width:40px;
+    text-decoration: none;
+    color:black;
+    height: 40px;
+}
+.menu-bar{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .hero-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .info-container{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    
+}
+@media  screen and (max-width:440px) {
+    .exp-success{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 300px;
+        max-width: 100%; 
+    }
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-container .text-info-container .text-container h1{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .image-info-container{
+        max-width: 200px;
+        height:200px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
+
+    .menu-container,.contact-btn-container{
+        display: none;       
+    }
+
+    nav{
+        padding:0px
+    }
+    .menu-bar{
+        cursor: pointer;
+        display: block;
+    }
+}
