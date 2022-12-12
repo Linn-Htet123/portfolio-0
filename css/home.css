@@ -163,7 +163,7 @@ a{
     padding: 0;
     margin: 0;
 }
-menu ul, .menu{
+.menu menu ul, .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
